@@ -1,0 +1,15 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "$zodModel": ["./src/__generated__/zod"],
+      "$feature*": ["./src/features/*"],
+      "$gql": ["./src/__generated__/graphql"],
+      "$type": ["./src/types"],
+      "$util*": ["./src/utils/*"],
+      "$hook*": ["./src/hooks/*"]
+    }
+  }
+}
